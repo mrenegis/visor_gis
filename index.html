@@ -219,12 +219,6 @@
             collapsed: true,
         });
         lay.addTo(map);
-        // Selector separat de mapa base; el control de capes qgis2web es conserva intacte.
-        L.control.layers(
-            {'Topogràfic gris (ICGC)': layer_icgc_topografic_gris},
-            null,
-            {position: 'bottomright', collapsed: true}
-        ).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
             layer: layer_iMPORTAR_VISOR_0,
